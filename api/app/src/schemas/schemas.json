@@ -1,0 +1,63 @@
+{
+  "definitions": {
+    "message": {
+      "title": "message",
+      "properties": {
+        "userName": {
+          "type": "string"
+        },
+        "text": {
+          "type": "string"
+        },
+        "timeout": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "userName",
+        "text"
+      ]
+    },
+    "messages": {
+      "title": "messages",
+      "properties": {
+        "messages": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "$ref": "#/definitions/message"
+          }
+        }
+      }
+    },
+    "standardSuccessResponse": {
+      "title": "standardResponse"
+    },
+    "standardFailureResponse": {
+      "title": "standardResponse",
+      "properties": {
+        "error": {
+          "type": "string"
+        },
+        "errors": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "$ref": "#/definitions/errorMessage"
+          }
+        }
+      }
+    },
+    "errorMessage": {
+      "title": "errorMessage",
+      "properties": {
+        "field": {
+          "type": "string"
+        },
+        "message": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

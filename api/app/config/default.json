@@ -1,0 +1,21 @@
+{
+  "app": {
+    "env": "Dev",
+    "swagger_ui_url": "http://localhost:4666",
+    "host": "localhost",
+    "port": 3000,
+    "title": "UA",
+    "keys": [
+      "UA"
+    ]
+  },
+  "postgres": {
+    "config": {
+      "user": "methodfitness",
+      "database": "methodfitness",
+      "host": "localhost",
+      "password": "password",
+      "port": "5432"
+    }
+  }
+}
