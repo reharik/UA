@@ -23,7 +23,7 @@ let createMessage = async function(ctx) {
   winston.debug('arrived at chat.messages');
   // get user
   let client = await ctx.repository.getByName(ctx.params.name, 'client');
-  if(!client.userName) {
+  if (!client.userName) {
     client = {userName: ctx.params.name, messages: []};
   }
 

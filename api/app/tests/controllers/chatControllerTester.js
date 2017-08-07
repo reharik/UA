@@ -79,7 +79,7 @@ describe('CHAT_CONTROLLER', function() {
         let result = await chatController.messages({repository: repo, params: {name: 'frank'}});
         result.body.should.be.a('array');
         result.body.length.should.equal(2);
-        td.verify(repo.save('client', {userName: 'frank'}));
+        td.verify(repo.save('client', {userName: 'frank', messages: []}));
       })
     });
   });
