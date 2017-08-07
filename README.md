@@ -4,12 +4,12 @@ PreRequisites:
 2) docker-compose must be installed
 
 Run application:
-1) visit localhost:4000 for swagger
-1) On command line in root folder rung :make dockerUp
-2) post something like the following {"userName": "frank", "text": "hi ma", "timeout": 100}
+1) On command line in root folder run :make dockerUp
+2) visit localhost:4000 for swagger
+3) post something like the following {"userName": "frank", "text": "hi ma", "timeout": 100}
 
 Visit DB
-1) make db;
+1) On command line in root folder run :make db;
 2) password = password;
 3) select jsonb_pretty(document) from client;
 
