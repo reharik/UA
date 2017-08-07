@@ -13,6 +13,9 @@ Visit DB
 2) password = password;
 3) select jsonb_pretty(document) from client;
 
+Kill DB
+1) On command line in root folder run :make killDB;
+
 mea culpa
 1) REST is not my strong point. I've seen it a million ways, right or wrong.
 If you tell me how you like it I'll do it that way

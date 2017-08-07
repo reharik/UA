@@ -11,3 +11,6 @@ lint:
 
 db:
 	psql -h localhost -d ua -U ua -p 5400
+
+killDB:
+	docker rm -fv ua_postgres_1
